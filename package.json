@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && yarn start  --prefix client",
+    "server": " nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.0",
+    "mongoose": "^5.10.2",
+    "nodemon": "^2.0.4",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
